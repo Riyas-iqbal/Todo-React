@@ -18,7 +18,7 @@ function RowPost(props) {
 
     const opts = {
         height: '390',
-        width: '640',
+        width: '100%',
         playerVars: {
           // https://developers.google.com/youtube/player_parameters
           autoplay: 1
@@ -50,7 +50,7 @@ function RowPost(props) {
                     )
                 }
             </div>
-            <div style={{ display: 'flex' , justifyContent: 'center'}}>
+            <div >
                 { YTvideo ? <YouTube videoId={ YTvideo } opts={opts}  /> : '' }
             </div>
         </div>
